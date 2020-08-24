@@ -21,7 +21,7 @@ const rate = async (id, score, sessionID) => {
       }),
     }
   );
-  const response = await fetch(req);
+  await fetch(req);
 };
 
 const search = async (title, page, setState) => {

@@ -3,23 +3,10 @@ import { Tabs, Input, Pagination } from "antd";
 import Movie from "../Movie";
 import "../../css/App.css";
 import { debRate, auth, debSearch } from "../../js/tmdb";
-import { union } from "lodash";
+
 const { TabPane } = Tabs;
 const { Search } = Input;
 
-const fakeMovie = Array(20).fill({
-  id: 1,
-  title: "Mohave Ridge",
-  genres: ["Sci-Fi", "Western", "Drama", "Adventure"],
-  date: "10-01-1921",
-  desc:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elt. Quisquam facere laborum, unde, obcaecati mollitia sint nesciunt, atque sed labore officiis doloremque ipsa? Temporibus cum voluptates dignissimos fugiat voluptatum repellendus eaque.",
-  score: 7.9,
-  userScore: 0,
-  poster:
-    "https://images-na.ssl-images-amazon.com/images/I/71rNJQ2g-EL._AC_SL1178_.jpg",
-  rate: debRate,
-});
 export default class App extends Component {
   constructor() {
     super();
