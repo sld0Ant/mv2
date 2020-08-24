@@ -16,6 +16,7 @@ const rate = async (id, score, sessionID) => {
       headers: {
         "Content-Type": "application/json;charset=utf-8",
       },
+
       body: JSON.stringify({
         value: score,
       }),

@@ -87,35 +87,13 @@ const genres = [
   },
 ];
 export default class Movie extends Component {
-  constructor({
-    id,
-    title,
-    genre_ids,
-    release_date,
-    overview,
-    vote_average,
-    userScore,
-    rate,
-    poster_path,
-    sessionID,
-    handleSave,
-  }) {
-    super({
-      id,
-      title,
-      genre_ids,
-      release_date,
-      overview,
-      vote_average,
-      userScore,
-      rate,
-      poster_path,
-      sessionID,
-      handleSave,
-    });
+  constructor(props) {
+    super(props);
 
-    this.state = { userScore: userScore };
-    this.genres = genre_ids.map((id) => genres.find((el) => el.id === id).name);
+    this.state = { userScore: props.userScore };
+    this.genres = props.genre_ids.map(
+      (id) => genres.find((el) => el.id === id).name
+    );
   }
   render() {
     return (
@@ -165,7 +143,6 @@ export default class Movie extends Component {
                 this.props.handleSave(
                   {
                     ...this.props,
-                    userScore: this.state.userScore,
                   },
                   e
                 );
