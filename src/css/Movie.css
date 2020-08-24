@@ -1,0 +1,155 @@
+.app__card {
+  width: 320px;
+  height: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app__card .ant-card-body {
+  width: 320px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app__card-head {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  height: 90px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+
+.app__card-pic {
+  margin-right: 10px;
+  height: 90px;
+  width: 60px;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+.app__card-title {
+  width: 180px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.app__card-title h2 {
+  margin-bottom: 0;
+}
+
+.app__card-title.left-align {
+  width: 260px;
+}
+
+.app__card-date {
+  font-size: 12px;
+  margin-top: 24px;
+}
+
+.app__card-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 220px;
+}
+
+.app__card-meta.left-align {
+  width: 300px;
+}
+
+.app__card-score {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 2px #ffec3d solid;
+  border-radius: 50%;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app__card-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.app__card-tags.left-align {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 220px;
+}
+
+.app__card-tags span {
+  font-size: 10px;
+  margin-right: 0px;
+  margin-left: 4px;
+  margin-top: 4px;
+  padding: 0 4px;
+}
+
+.app__card-desc p {
+  margin-top: 5px;
+  font-size: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.app__card-rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  height: 26px;
+}
+/*# sourceMappingURL=Movie.css.map */

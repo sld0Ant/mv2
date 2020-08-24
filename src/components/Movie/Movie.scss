@@ -1,0 +1,99 @@
+.app__card {
+  width: 320px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .ant-card-body {
+    width: 320px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-head {
+    align-self: flex-start;
+    display: flex;
+    width: 300px;
+    height: 90px;
+    flex: 0 1 auto;
+  }
+  &-pic {
+    margin-right: 10px;
+    height: 90px;
+    width: 60px;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+  }
+  &-title {
+    width: 180px;
+    box-sizing: border-box;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    h2 {
+      margin-bottom: 0;
+    }
+    &.left-align {
+      width: 260px;
+    }
+  }
+  &-date {
+    font-size: 12px;
+    margin-top: 24px;
+  }
+  &-meta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 220px;
+    &.left-align {
+      width: 300px;
+    }
+  }
+  &-score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: 2px #ffec3d solid;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-tags {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    &.left-align {
+      align-self: flex-end;
+      width: 220px;
+    }
+    span {
+      font-size: 10px;
+      margin-right: 0px;
+      margin-left: 4px;
+      margin-top: 4px;
+      padding: 0 4px;
+    }
+  }
+  &-desc {
+    p {
+      margin-top: 5px;
+      font-size: 12px;
+      box-sizing: border-box;
+    }
+  }
+  &-rate {
+    display: flex;
+
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 26px;
+  }
+}
