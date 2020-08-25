@@ -28,10 +28,9 @@ export default class AppContainer extends Component {
     this.setState((prev) => {
       const newRated = prev.userRated.find((el) => el.id === movie.id)
         ? prev.userRated.map((el) =>
-            el.id === movie.id ? { ...movie, userScore } : { ...el, userScore }
+            el.id === movie.id ? { ...movie, userScore } : { ...el }
           )
         : [...prev.userRated, { ...movie, userScore }];
-      console.log(newRated);
       return {
         ...prev,
         userRated: newRated,
@@ -49,7 +48,7 @@ export default class AppContainer extends Component {
             key={el.id}
             {...{
               ...el,
-              userScore: this.state.userRated.find((el) => el.id)?.userScore,
+              // userScore: this.state.userRated.find((el) => el.id)?.userScore,
               sessionID: this.state.sessionID,
               handleSave: this.handleSave,
               rate: debRate,
