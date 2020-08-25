@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Input, Pagination } from "antd";
 import Movie from "../Movie";
 import "../../css/App.css";
+import "normalize.css";
 import { debRate, auth, debSearch } from "../../js/tmdb";
 
 import App from "../App/";
