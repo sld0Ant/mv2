@@ -1,5 +1,4 @@
 .app {
-  padding: 10px;
   width: 360px;
   min-width: 360px;
   margin: 0 auto;
@@ -26,13 +25,16 @@
   }
 
   &__tab {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 16px;
-
-    .app__card {
-      margin-bottom: 10px;
+    .app__spin {
+      width: 300px !important;
     }
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 16px;
+    gap: 10px;
   }
   &__footer {
     display: flex;
@@ -40,27 +42,17 @@
   }
   @media (min-width: 670px) {
     width: 690px;
-    &__card-container {
-      padding-left: 10px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      .app__card {
-        margin-right: 10px;
+    &__tab {
+      .app__spin {
+        width: 670px !important;
       }
     }
   }
   @media (min-width: 1390px) {
     width: 1390px;
-    &__card-container {
-      padding-left: 10px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      .app__card {
-        margin-right: 10px;
+    &__tab {
+      .app__spin {
+        width: 1300px !important;
       }
     }
   }

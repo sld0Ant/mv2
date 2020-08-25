@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Tabs } from "antd";
+import { Tabs, Spin } from "antd";
 import "../../css/App.css";
 
 const { TabPane } = Tabs;
@@ -20,13 +20,14 @@ export default class App extends Component {
         <main className="app__main">
           <Tabs centered defaultActiveKey="1">
             <TabPane className="app__tab" tab="Lookup" key="1">
-              <div className="app__card-container">
-                {this.props.movies}
-                {this.props.pagination}
-              </div>
+              {this.props.loading && (
+                <Spin className="app__spin" size="large" />
+              )}
+              {this.props.movies}
+              {this.props.pagination}
             </TabPane>
             <TabPane className="app__tab" tab="Rated" key="2">
-              <div className="app__card-container">{this.props.userRated}</div>
+              {this.props.userRated}
             </TabPane>
           </Tabs>
         </main>

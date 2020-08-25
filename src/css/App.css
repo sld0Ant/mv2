@@ -1,5 +1,4 @@
 .app {
-  padding: 10px;
   width: 360px;
   min-width: 360px;
   margin: 0 auto;
@@ -34,14 +33,22 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-bottom: 16px;
+  gap: 10px;
 }
 
-.app__tab .app__card {
-  margin-bottom: 10px;
+.app__tab .app__spin {
+  width: 300px !important;
 }
 
 .app__footer {
@@ -57,23 +64,8 @@
   .app {
     width: 690px;
   }
-  .app__card-container {
-    padding-left: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .app__card-container .app__card {
-    margin-right: 10px;
+  .app__tab .app__spin {
+    width: 670px !important;
   }
 }
 
@@ -81,23 +73,8 @@
   .app {
     width: 1390px;
   }
-  .app__card-container {
-    padding-left: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .app__card-container .app__card {
-    margin-right: 10px;
+  .app__tab .app__spin {
+    width: 1300px !important;
   }
 }
 /*# sourceMappingURL=App.css.map */

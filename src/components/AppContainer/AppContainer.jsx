@@ -18,6 +18,7 @@ export default class AppContainer extends Component {
       userRated: [],
       page: 1,
       search: null,
+      loading: false,
     };
     this.handleSave = this.handleSave.bind(this);
   }
@@ -40,10 +41,12 @@ export default class AppContainer extends Component {
   }
 
   render() {
+    const loading = this.state.loading;
     const movies =
       this.state.sessionID &&
       this.state.movies &&
       this.state.movies.map((el, i) => {
+        if (this.state.loading) this.setState({ loading: false });
         return (
           <Movie
             key={el.id}
@@ -84,10 +87,11 @@ export default class AppContainer extends Component {
         className="app__search"
         defaultValue={this.state.search}
         onChange={(e) => {
+          this.setState({ loading: true });
           debSearch(e.target.value, this.state.page, this.setState.bind(this));
         }}
       />
     );
-    return <App {...{ search, movies, pagination, userRated }} />;
+    return <App {...{ search, movies, pagination, userRated, loading }} />;
   }
 }
