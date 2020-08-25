@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Tabs } from "antd";
-
 import "../../css/App.css";
 
 const { TabPane } = Tabs;
@@ -9,8 +8,8 @@ export default class App extends Component {
   // eslint-disable-next-line
   constructor(props) {
     super(props);
+    this.state = { loading: false };
   }
-
   render() {
     return (
       <div className="app">

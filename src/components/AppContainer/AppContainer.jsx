@@ -16,7 +16,6 @@ export default class AppContainer extends Component {
       sessionID: null,
       userRated: [],
       page: 1,
-      totalPages: null,
       search: null,
     };
     this.handleSave = this.handleSave.bind(this);
@@ -58,6 +57,7 @@ export default class AppContainer extends Component {
           />
         );
       });
+
     const userRated =
       this.state.userRated &&
       this.state.userRated.map((el) => {
@@ -65,6 +65,13 @@ export default class AppContainer extends Component {
       });
     const pagination = (
       <Pagination
+        // style={{
+        //   display: document
+        //     .querySelectorAll(".app__tab")[0]
+        //     .firstChild.classList.contains("app__card")
+        //     ? "block"
+        //     : "none",
+        // }}
         defaultCurrent={this.state.page}
         total={this.state.totalResults}
         onChange={(e) =>

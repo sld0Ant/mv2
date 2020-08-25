@@ -13,13 +13,23 @@
   .ant-pagination-options {
     display: none;
   }
+  .ant-pagination {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ant-pagination:only-child {
+    display: none;
+  }
+
   &__title {
     text-align: center;
   }
+
   &__tab {
     display: flex;
     justify-content: center;
     padding-bottom: 16px;
+
     .app__card {
       margin-bottom: 10px;
     }
